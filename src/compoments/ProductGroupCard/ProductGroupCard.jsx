@@ -4,12 +4,13 @@ import './ProductGroupCard.css';
 import { CiShoppingCart, CiHeart  } from "react-icons/ci";
 import { PiEye } from "react-icons/pi";
 import { IoIosGitCompare } from "react-icons/io";
+import { useNavigate } from 'react-router-dom';
 
 
 const ProductGroupCard = () => {
 
     const {Products} = ProductStore();
-
+    const navigate = useNavigate()
 
     return (
         <section className='display-group-section'>
@@ -34,7 +35,7 @@ const ProductGroupCard = () => {
                                             <div className="action-icon">
                                                 <span><CiShoppingCart /> </span>
                                                 <span><CiHeart /> </span>
-                                                <span><PiEye /> </span>
+                                                <span><PiEye  onClick={()=>navigate(`/details/${item["_id"]}`)} /> </span>
                                                 <span><IoIosGitCompare /> </span>
 
                                             </div>

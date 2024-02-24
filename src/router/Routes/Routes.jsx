@@ -13,6 +13,8 @@ import ProductDetail from "../../compoments/ProductDetail/ProductDetail";
 import ResetVerifyOtpForm from "../../compoments/Form/ResetVerifyOtpForm";
 import ChangePasswordForm from "../../compoments/Form/ChangePasswordForm";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import AddBrandPage from "../../pages/AddBrandPage";
+import AddCategoryPage from "../../pages/AddCategoryPage";
 
 const router = createBrowserRouter([
     {
@@ -66,6 +68,14 @@ const router = createBrowserRouter([
             {
                 path:"/details/:id",
                 element: <ProductDetail />
+            },
+            {
+                path:"/add-brand",
+                element: <AddBrandPage />
+            },
+            {
+                path:"/add-category",
+                element: <AddCategoryPage />
             }
            
 

@@ -3,7 +3,7 @@ import ProductStore from '../../store/ProductStore';
 import './ProductForm.css'
 import toast from 'react-hot-toast';
 import { BsArrowLeft } from "react-icons/bs";
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const ProductForm = () => {
     const navigate = useNavigate();
@@ -46,6 +46,7 @@ const ProductForm = () => {
     return (
         <section className="product-form">
             <button onClick={()=> navigate("/products")} className='btn btn-outline-success px-4 mb-3'><BsArrowLeft /> Go Back </button>
+            <h4 className='text-center'>Add New Product</h4>
             <form onSubmit={handleSubmit} >
                 
                 <label>Product Name</label>
@@ -67,6 +68,7 @@ const ProductForm = () => {
                     }
   
                 </select>
+                <Link to="/add-brand"><p className='text-success mb-2'>Add A Brand</p></Link>
 
                 <label> Select Category</label>
                 <select  onChange={(e)=>handleProductData("categoryID", e.target.value)}   className="form-select p-3" aria-label="Default select example">
@@ -76,6 +78,7 @@ const ProductForm = () => {
                         Categories.map( (item, index) => <option key={index} value={item["_id"]}>{item["name"]}</option> )
                     }
                 </select>
+                <Link to="/add-category"><p className='text-success'>Add A Category</p></Link>
 
                 <input type="submit" value="Add To Store" className='btn btn-success w-100 p-3 mt-4' />
 

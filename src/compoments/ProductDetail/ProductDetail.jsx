@@ -4,11 +4,13 @@ import { useEffect } from "react";
 import './ProductDetail.css';
 import { BsArrowLeft } from "react-icons/bs";
 import { GrEdit  } from "react-icons/gr";
+import UserStore from "../../store/UserStore";
 
 const ProductDetail = () => {
     const {id} = useParams();
     const navigate = useNavigate();
     const { ProductDetail, ProductDetailRequest} = ProductStore();
+    const { isLogin} = UserStore();
 
     useEffect( ()=>{
         (async()=>{
@@ -39,8 +41,13 @@ const ProductDetail = () => {
                             <h6>Category: {ProductDetail["category"]["name"]}</h6>
                             <h6>Brand: {ProductDetail["brand"]["name"]}</h6>
                             <p>{ProductDetail["des"]}</p>
-                            <button onClick={()=> navigate("/products")} className='btn btn-outline-success px-4 mt-5'><BsArrowLeft /> Go Back </button>
-                            <button onClick={()=>navigate(`/update-form/${ProductDetail["_id"]}`)} className='btn btn-success px-4 mt-5 ms-2' title="Edit"><GrEdit /> </button>
+                            {
+                                isLogin() && <>
+                                    <button onClick={()=> navigate("/products")} className='btn btn-outline-success px-4 mt-5'><BsArrowLeft /> Go Back </button>
+                                    <button onClick={()=>navigate(`/update-form/${ProductDetail["_id"]}`)} className='btn btn-success px-4 mt-5 ms-2' title="Edit"><GrEdit /> </button>
+                                </>
+                            }
+                            
 
                         </div>
 

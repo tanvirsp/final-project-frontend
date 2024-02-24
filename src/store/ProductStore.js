@@ -48,6 +48,18 @@ const ProductStore = create( (set) =>({
 
     },
 
+    AddBrandRequest : async(data)=>{
+        const result = await axios.post(`http://localhost:5000/api/v1/addBrand`, data, {withCredentials: true});
+        return result["data"]
+    },
+    
+    AddCategoryRequest : async(data)=>{
+        const result = await axios.post(`http://localhost:5000/api/v1/addCategory`, data, {withCredentials: true});
+        return result["data"]
+    },
+
+
+
     Categories:null,
     CategoryRequest: async() =>{
         const result = await axios.get(`http://localhost:5000/api/v1/categories`);
