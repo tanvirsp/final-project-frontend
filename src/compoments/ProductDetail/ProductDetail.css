@@ -1,0 +1,16 @@
+.details-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.details-section {
+    padding: 100px 0;
+}
+
+.details-info {
+    padding: 35px;
+}
+
+.details-info p {
+    margin-top: 35px
+}

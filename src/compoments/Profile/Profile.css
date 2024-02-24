@@ -1,0 +1,25 @@
+.profile-section-2, .profile-section {
+    padding: 45px;
+    background-color: #f7f7f7;
+    margin: 20px 0px;
+    border-radius: 20px;
+}
+
+.profile-img {
+    text-align: center;
+}
+
+.profile-img img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.profile-banner {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 45px;
+    background-color: #f7f7f7;
+    align-items: center;
+    margin-top: 25px;
+    border-radius: 20px;
+}

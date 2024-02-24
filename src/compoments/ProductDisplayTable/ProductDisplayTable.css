@@ -1,0 +1,25 @@
+.action-btn svg {
+    font-size: 32px;
+    padding: 6px;
+    cursor: pointer;
+    color: white;
+    margin: 3px
+
+}
+
+.action-btn svg:nth-child(1){
+    background-color: green;
+}
+
+.action-btn svg:nth-child(2){
+    background-color: orange;
+}
+
+.action-btn svg:nth-child(3){
+    background-color: red;
+}
+
+.list-product-img {
+    width: 75px;
+    border-radius: 50%;
+}

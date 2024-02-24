@@ -1,0 +1,14 @@
+.product-form {
+    max-width: 600px;
+    margin: 50px  auto;
+    padding: 45px;
+    background-color: #f7f7f7;
+
+}
+
+.product-form label {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 7px 0;
+    
+}

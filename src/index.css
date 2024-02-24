@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* 
+color code
+#130D33
+#231955
+#1f4690
+#e8aa42
+#ffe5b4
+*/
+
+/*
+***************************
+COMMON STYLE 
+***************************
+*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    font-size: 47.78px;
+}
+h2 {font-size: 39.81px}
+h3 {font-size: 33.18px}
+h4 {font-size: 27.65px}
+h5 {font-size: 23.04px}
+h6 {font-size: 19.2px}
+p {
+    font-size: 16px;
+    color: #1a1a1a;
+}
+small {font-size: 13.33px}
+
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul li a  {
+    text-decoration: none;
+    color: #1a1a1a
+}
+
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+
+/* SweetAlert Custom CSS */
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+    background-color: #198754 !important;
+}

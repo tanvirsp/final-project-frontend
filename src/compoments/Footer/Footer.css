@@ -1,0 +1,47 @@
+
+
+footer {
+    background-color: #232323;
+    padding: 100px 0;
+    color: white;
+}
+
+footer p {
+    color: white;
+}
+
+.copyright {
+    background-color: #198754;
+    padding: 12px 0;
+   
+}
+
+.copyright-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright-text p {
+    padding: 0;
+    margin: 0;
+    color: white
+}
+
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons li a {
+    font-size: 30px;
+    padding: 0 5px;
+    color: #ffffff
+}
+
+
+.quick-link li a {
+    padding: 4px 0;
+    display: inline-block;
+    color: white;
+}
+

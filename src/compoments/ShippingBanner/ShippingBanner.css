@@ -1,0 +1,27 @@
+
+.shipping-banner {
+    padding: 35px 15px;
+    background-color: rgb(255, 255, 255);
+    margin-top: -45px;
+    border: 1px solid #dce3e5
+}
+.banner-item {
+    display: flex;
+    align-items: center;
+    color: #27323f;
+    border-left: 1px solid lightgray;
+    padding-left: 35px;
+    height: 30px;
+    
+}
+
+.first-banner {
+    padding-left: 0;
+    border-left: 0px ;
+}
+
+.banner-item p {
+    font-size: 35px;
+    color: #198754;
+    margin-right: 15px;
+}
