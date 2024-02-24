@@ -16,7 +16,8 @@ const ProductGroupCard = () => {
             <div className="container">
                 
                 {
-                    Products === null ? <p>Loading</p>:(
+                    Products === null ? <p>Loading</p>:
+                    Products.length > 0 ? (
                         <div className="row">
                             {
                               Products.map( (item, index) =>{
@@ -43,7 +44,8 @@ const ProductGroupCard = () => {
                               })  
                             }
                         </div>
-                    )
+                    ): <h6>No product in your store</h6>
+                    
                     
                 }
                 

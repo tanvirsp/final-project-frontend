@@ -31,7 +31,6 @@ const LoginForm = () => {
     const handleSubmit = async(e)=>{
         e.preventDefault();
         const result = await LoginRequest(data);
-        console.log(result);
         if(result["status"] ==="success"){
             await ProfileRequest()
             toast.success('Successfully login');  

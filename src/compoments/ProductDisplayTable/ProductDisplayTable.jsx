@@ -14,9 +14,6 @@ const ProductDisplayTable = () => {
 
 
    
-
-    console.log(Products);
-
   
     const handleDelete =(id)=>{
         Swal.fire({
